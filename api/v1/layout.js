@@ -25,7 +25,7 @@ router.get('/:id', function (req, res, next) {
 router.post('/', function (req, res, next) {
 	console.log(req.body);
 	const id = crypto.createHmac('sha256', JSON.stringify(req.body))
-		.digest('base64');
+		.digest('base64').replace(/\//g, "_").replace(/\+/g, "-");
 	const layout = { id, layout: req.body };
 	r.table("layout").insert(layout).run().then(result => {
 		return res.json(layout);
