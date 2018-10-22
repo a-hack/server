@@ -22,7 +22,7 @@ const options = {
   host: "jtooldb.cugcr.ca",
   db: "hackathon",
   max: 50,
-  buffer: 10,
+  buffer: 2,
 };
 
 let pullFromEnv = ["user", "password", "host", "db"];
