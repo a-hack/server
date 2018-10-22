@@ -22,6 +22,14 @@ app.set('port', port);
 let server = http.createServer(app);
 
 /**
+ * Log GPL license
+ */
+console.log(`
+   Copyright (C) 2018  Jacob MacDonald, Jacob Martin, Patrick Gingras,
+   Michael Dysart, Aweys Ahmed, Hassan Salami, Aritz Joseph Beobide-Cardinal
+   a-hack comes with ABSOLUTELY NO WARRANTY; For details see the GPL2 license.`);
+
+/**
  * Listen on provided port, on all network interfaces.
  */
 
