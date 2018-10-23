@@ -35,9 +35,7 @@ router.get('/:id', function (req, res, next) {
 		} else {
 			return res.status(404).json({ error: "Not Found"})
 		}
-
 	}).catch(error => {
-		console.error(error);
 		res.status(500).json({ error: error.message });
 	});
 });
