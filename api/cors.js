@@ -18,8 +18,6 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-const express = require("express");
-
 module.exports = function cors(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     try {
